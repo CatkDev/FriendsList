@@ -3,12 +3,13 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default class FriendScreen extends Component {
     render() {
+        const friendId = this.props.route.params.friendId;
         return (
             <View style={styles.container} >
-                <Text>FREUND</Text>
+                <Text>Freund {friendId}</Text>
                 <Button
                     title="Zurück"
-                    onPress={() => alert('Zurück')}
+                    onPress={() => this.props.navigation.goBack()}
                 />
             </View>
         );

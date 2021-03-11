@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-import FriendScreen from './FriendScreen';
-
 export default class FriendsScreen extends Component {
     render() {
         return (
@@ -10,7 +8,9 @@ export default class FriendsScreen extends Component {
                 <Text>Freunde</Text>
                 <Button
                     title="Gehe zu Freund"
-                    onPress={() => alert('Öffnet "Gehe zu Freund"')}
+                    onPress={
+                        () => this.props.navigation.navigate('FriendScreen', { friendId: 1 })
+                    }
                 />
             </View>
         );

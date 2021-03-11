@@ -1,12 +1,41 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
 import * as Icon from '@expo/vector-icons';
 
 import FriendsScreen from './screens/FriendsScreen';
 import SettingsScreen from './screens/SettingsScreen';
+import FriendScreen from './screens/FriendScreen';
 
+const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+
+function FriendsStack() {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                headerStyle: { backgroundColor: 'aliceblue' }
+            }}
+        >
+            <Stack.Screen name="FriendsScreen" component={FriendsScreen} options={{ headerShown: false }} />
+            <Stack.Screen
+                name="FriendScreen"
+                component={FriendScreen}
+                options={
+                    ({ route }) => {
+                        const friendId = route.params.friendId;
+                        return {
+                            headerBackTitle: null,
+                            headerTitleAlign: 'center',
+                            headerTitle: friendId
+                        }
+                    }
+                }
+            />
+        </Stack.Navigator>
+    )
+}
 
 export default function AppNavigation() {
     return (
@@ -41,7 +70,7 @@ export default function AppNavigation() {
             >
                 <Tab.Screen
                     name="Home"
-                    component={FriendsScreen}
+                    component={FriendsStack}
                     options={{
                         title: 'Freunde'
                     }}
