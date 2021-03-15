@@ -4,47 +4,63 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="327f8704-8ffc-4cdb-8106-fe8b5a3b0cc1" name="Default Changelist" comment="">
+    <list default="true" id="351ebbe7-cd55-4e29-8b5f-4ca1e603811a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/FriendsList.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/FriendListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/FriendListItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/screens/FriendScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/screens/FriendScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/screens/FriendsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/screens/FriendsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/screens/SettingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/screens/SettingsScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1pbaZcMQT46u2HzoZQImRsxVOo3" />
+  <component name="ProjectId" id="1pnDosLef896QC7MXooDLSeDWM2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="327f8704-8ffc-4cdb-8106-fe8b5a3b0cc1" name="Default Changelist" comment="" />
-      <created>1615454299123</created>
+      <changelist id="351ebbe7-cd55-4e29-8b5f-4ca1e603811a" name="Default Changelist" comment="" />
+      <created>1615810138833</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615454299123</updated>
+      <updated>1615810138833</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="131" y="163" width="1200" height="675" key="AVDManager" timestamp="1615550016114">
+    <state x="355" y="137" width="1200" height="675" key="AVDManager" timestamp="1615813328566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="131" y="163" width="1200" height="675" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615550016114" />
+    <state x="355" y="137" width="1200" height="675" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615813328566" />
   </component>
 </project>

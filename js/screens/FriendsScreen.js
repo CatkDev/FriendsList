@@ -12,18 +12,18 @@ export default class FriendsScreen extends Component {
                         <View style={styles.listSeparator} />
                     }
                     data={[
-                        { name: 'Alice' },
-                        { name: 'Bob' },
-                        { name: 'Jane' },
-                        { name: 'Joe' }
+                        { first: 'Alice', last: 'Müller', email: 'a.mueller@example.com' },
+                        { first: 'Bob', last: 'Meier', email: 'meier.b@example.com' },
+                        { first: 'Jane', last: 'Schulz', email: 'schulz.jane@example.com' },
+                        { first: 'Joe', last: 'Schröder', email: 'joe.schr@example.com' }
                     ]}
-                    keyExtractor={item => item.name}
+                    keyExtractor={item => item.email}
                     renderItem={({ item }) => (
                         <FriendListItem
                             friend={item}
                             onPress={() =>
                                 this.props.navigation.navigate('FriendScreen', {
-                                    friend: item.name
+                                    friend: item
                                 })
                             }
                         />

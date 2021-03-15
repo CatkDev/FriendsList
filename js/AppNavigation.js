@@ -24,11 +24,11 @@ function FriendsStack() {
                 component={FriendScreen}
                 options={
                     ({ route }) => {
-                        const friendId = route.params.friendId;
+                        const friend = route.params.friend;
                         return {
                             headerBackTitle: null,
                             headerTitleAlign: 'center',
-                            headerTitle: friendId
+                            headerTitle: `${friend.first} ${friend.last}`
                         }
                     }
                 }
