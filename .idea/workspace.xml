@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351ebbe7-cd55-4e29-8b5f-4ca1e603811a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FriendsList.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/FriendListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/FriendListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/screens/FriendScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/screens/FriendScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/screens/FriendsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/screens/FriendsScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +56,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="355" y="137" width="1200" height="675" key="AVDManager" timestamp="1615813328566">
+    <state x="355" y="137" width="1200" height="675" key="AVDManager" timestamp="1615904616225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="355" y="137" width="1200" height="675" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615813328566" />
+    <state x="355" y="137" width="1200" height="675" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615904616225" />
   </component>
 </project>
