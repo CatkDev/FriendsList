@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { Dimensions, Image, ScrollView, StyleSheet, Text } from 'react-native';
 
 export default class FriendScreen extends Component {
     render() {
-        const friendId = this.props.route.params.friendId;
+        const friend = this.props.route.params.friend;
         return (
-            <View style={styles.container} >
-                <Text>Freund {friendId}</Text>
-                <Button
-                    title="Zurück"
-                    onPress={() => this.props.navigation.goBack()}
+            <ScrollView
+                style={styles.scrollview}
+                contentContainerStyle={styles.container}
+            >
+                <Image
+                    style={styles.image}
+                    source={require('../../assets/icon.png')}
                 />
-            </View>
+                <Text>{friend.first} {friend.last}</Text>
+            </ScrollView>
         );
     }
 };
 
+const width = Dimensions.get('window').width * 0.75;
+
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+        padding: 20
     },
+    scrollview: {
+        backgroundColor: '#fff',
+    },
+    image: {
+        height: width,
+        width: width,
+        marginBottom: 20
+    }
 });
