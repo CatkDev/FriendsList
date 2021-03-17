@@ -3,15 +3,16 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function (props) {
     const { friend, onPress } = props;
+    const image = friend.picture.thumbnail;
     return (
         <TouchableOpacity onPress={onPress}>
             <View style={styles.container}>
                 <Image
                     style={styles.image}
-                    source={require('../../assets/icon.png')}
+                    source={{ uri: image }}
                 />
                 <View style={styles.text}>
-                    <Text style={styles.name}>{friend.first} {friend.last}</Text>
+                    <Text style={styles.name}>{friend.name.first} {friend.name.last}</Text>
                     <Text style={styles.email}>{friend.email}</Text>
                 </View>
             </View>
@@ -22,7 +23,7 @@ export default function (props) {
 const styles = StyleSheet.create({
     container: {
         padding: 10,
-        flexDirection: 'row',
+        flexDirection: 'row'
     },
     image: {
         height: 66,
