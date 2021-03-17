@@ -28,7 +28,7 @@ function FriendsStack() {
                         return {
                             headerBackTitle: null,
                             headerTitleAlign: 'center',
-                            headerTitle: `${friend.first} ${friend.last}`
+                            headerTitle: `${friend.name.first} ${friend.name.last}`
                         }
                     }
                 }

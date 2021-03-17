@@ -4,6 +4,7 @@ import { Dimensions, Image, ScrollView, StyleSheet, Text } from 'react-native';
 export default class FriendScreen extends Component {
     render() {
         const friend = this.props.route.params.friend;
+        const image = friend.picture.large;
         return (
             <ScrollView
                 style={styles.scrollview}
@@ -11,9 +12,9 @@ export default class FriendScreen extends Component {
             >
                 <Image
                     style={styles.image}
-                    source={require('../../assets/icon.png')}
+                    source={{ uri: image }}
                 />
-                <Text>{friend.first} {friend.last}</Text>
+                <Text>{friend.name.first} {friend.name.last}</Text>
             </ScrollView>
         );
     }
